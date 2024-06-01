@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #F4F4F4;
+}
+.profile-card {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    height: 420px;
+    width: 100%;
+    max-width: 370px;
+    border-radius: 25px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+.profile-card::before {
+    content: "";
+    position: absolute;
+    height: 36%;
+    width: 100%;
+    background-color: #4070F4;
+    top: 0;
+    border-radius: 25px 25px 0 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.profile-card .image {
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: #4070F4;
+    padding: 3px;
+}
+.image .profile-img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    border: 3px solid #fff;
+}
+.profile-card .jobs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+.jobs .name {
+    font-size: 22px;
+    font-weight: 500;
+}
+.jobs .job {
+    font-size: 15px;
+    font-weight: 400;
+}
+.profile-card .social-links {
+    display: flex;
+    margin-top: 15px;
+    gap: 15px;
+}
+.social-links .link {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 18px;
+    background-color: #4070F4;
+    padding: 10px;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+}
+.profile-card .buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+.buttons .button {
+    color: #fff;
+    background-color: #4070F4;
+    border-radius: 25px;
+    cursor: pointer;
+    padding: 8px 25px;
+    border: none;
+    font-weight: 400;
+    font-size: 14px;
+}
+.profile-card .analytic {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+.analytic .info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 2px solid rgba(0, 0, 0, 0.1);
+    padding: 0 20px;
+    color: #333;
+}
+.analytic .info:last-child {
+    border-right: none;
+}
+.info i {
+    font-size: 18px;
+    margin-right: 3px;
+}
+.info .text-info {
+    font-size: 15px;
+}
